@@ -126,6 +126,8 @@ img {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -142,13 +144,26 @@ img {
   margin-left: auto;
   margin-right: 50px;
 }
+
+.email-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.smarthphone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 /* ======HEADER FINISH====== */
 
 /* ======HERO START====== */
 .hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/hero/background-image.jpg);
+  background-color: #2f303a;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -194,6 +209,19 @@ img {
   flex-basis: calc((100% - 120px) / 4);
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.advantages-image-content {
+  width: 270px;
+  height: 120px;
+  padding: 25px 102px 25px 102px;
+  margin-bottom: 50px;
+  background-color: #f5f4fa;
+}
+
+.advantages-image-item {
+  width: 64px;
+  height: 70px;
 }
 
 .advantages-list-item-title {
@@ -275,6 +303,8 @@ img {
 
 .team-section-content {
   padding-top: var(--card-set-gap);
+  padding-left: 32px;
+  padding-right: 32px;
   padding-bottom: var(--card-set-gap);
 }
 
@@ -293,9 +323,87 @@ img {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.team-images-content {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.team-images-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-images-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: #afb1b8;
+}
+
+.team-images-link:hover,
+.team-images-link:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 /* ======TEAM SECTION FINISH====== */
+/* ======CLIENTS SECTION START====== */
+.clients-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--headings-color);
+  margin-bottom: 50px;
+}
 
+.our-clients-list {
+  display: flex;
+}
+
+.our-clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-content {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 3px;
+  border: 1px solid #afb1b8;
+}
+
+.our-clients-image {
+  fill: #afb1b8;
+}
+
+.our-clients-link:hover,
+.our-clients-link:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-color: var(--accent-color);
+}
+
+.our-clients-link:hover .our-clients-image,
+.our-clients-link:focus .our-clients-image {
+  fill: var(--accent-color);
+}
+/* ======CLIENTS SECTION FINISH====== */
 /* ======FOOTER SECTION START====== */
 .footer {
   background: #2f303a;
@@ -305,7 +413,7 @@ img {
 
 .footer-link {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
