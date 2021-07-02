@@ -56,10 +56,46 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* ======SOCIAL MEDIA START====== */
+.social-media-content {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  fill: #afb1b8;
+}
+
+.social-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus,
+.footer-social-media-content .social-media-link:hover,
+.footer-social-media-content .social-media-link:focus {
+  fill: #ffffff;
+  background-color: var(--accent-color);
+}
+/* ======SOCIAL MEDIA FINISH====== */
 /* ======MAIN STYLING SETTINGS END ====== */
 
-/* ======STUDIO START====== */
-/* ======HEADER START====== */
+/* ======STUDIO PAGE START====== */
+/* ======HEADER SECTION START====== */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -154,9 +190,9 @@ img {
   margin-right: 10px;
   fill: currentColor;
 }
-/* ======HEADER FINISH====== */
+/* ======HEADER SECTION FINISH====== */
 
-/* ======HERO START====== */
+/* ======HERO SECTION START====== */
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/hero/background-image.jpg);
@@ -166,6 +202,7 @@ img {
   padding-bottom: 200px;
   text-align: center;
   letter-spacing: 0.06em;
+  max-width: 1600рх;
 }
 
 .main-title {
@@ -196,7 +233,7 @@ img {
   color: #ffffff;
   background-color: var(--accent-color);
 }
-/* ======HERO FINISH====== */
+/* ======HERO SECTION FINISH====== */
 
 /* ======ADVANTAGES SECTION START====== */
 .advantages-list {
@@ -325,41 +362,8 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
-
-.social-media-content {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-}
-
-.social-media-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-media-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: transparent;
-  fill: #afb1b8;
-}
-
-.social-media-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-media-link:hover,
-.social-media-link:focus,
-.footer-social-media-content .social-media-link:hover,
-.footer-social-media-content .social-media-link:focus {
-  fill: #ffffff;
-  background-color: var(--accent-color);
-}
 /* ======TEAM SECTION FINISH====== */
+
 /* ======CLIENTS SECTION START====== */
 .clients-title {
   font-style: normal;
@@ -410,6 +414,7 @@ img {
   fill: var(--accent-color);
 }
 /* ======CLIENTS SECTION FINISH====== */
+
 /* ======FOOTER SECTION START====== */
 .footer {
   background: #2f303a;
@@ -439,6 +444,10 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
+.footer-social-media-content {
+  padding-top: 15px;
+}
+
 .footer-link {
   font-style: normal;
   font-weight: 400;
@@ -466,9 +475,9 @@ img {
   color: #ffffff;
 }
 /* ======FOOTER SECTION FINISH====== */
-/* ======STUDIO FINISH====== */
+/* ======STUDIO PAGE FINISH====== */
 
-/* ======PORTFOLIO START====== */
+/* ======PORTFOLIO PAGE START====== */
 /* ======PROJECTS BUTTONS START====== */
 .projects-btn-list {
   display: flex;
@@ -504,10 +513,12 @@ img {
 .projects-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ======PROJECTS BUTTONS FINISH====== */
 
-/* ======EXAMPLES GALLERY START====== */
+/* ======EXAMPLES SECTION START====== */
 .examples-heading {
   font-weight: 700;
   font-size: 18px;
@@ -546,5 +557,5 @@ img {
   border: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
 }
-/* ======EXAMPLES GALLERY FINISH====== */
-/* ======PORTFOLIO FINISH====== */
+/* ======EXAMPLES SECTION FINISH====== */
+/* ======PORTFOLIO PAGE FINISH====== */
