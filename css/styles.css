@@ -326,18 +326,18 @@ img {
   margin-bottom: 16px;
 }
 
-.team-images-content {
+.social-media-content {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
 }
 
-.team-images-list {
+.social-media-list {
   display: flex;
   justify-content: space-between;
 }
 
-.team-images-link {
+.social-media-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -348,8 +348,14 @@ img {
   fill: #afb1b8;
 }
 
-.team-images-link:hover,
-.team-images-link:focus {
+.social-media-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-media-link:hover,
+.social-media-link:focus,
+.footer-social-media-content .social-media-link:hover,
+.footer-social-media-content .social-media-link:focus {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
@@ -409,6 +415,28 @@ img {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  letter-spacing: 0.03em;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-address-container {
+  margin-right: 70px;
+}
+
+.footer-social-media-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-social-media-content .social-media-link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-link {
@@ -416,7 +444,6 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
