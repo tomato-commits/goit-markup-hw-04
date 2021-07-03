@@ -86,14 +86,18 @@ img {
 
 .social-media-link:hover,
 .social-media-link:focus,
-.footer-social-media-content .social-media-link:hover,
-.footer-social-media-content .social-media-link:focus {
+.footer-social-media-link:hover,
+.footer-social-media-link:focus {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
 
 .footer-social-media-image {
   fill: #ffffff;
+}
+
+.footer-social-media-link {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ======SOCIAL MEDIA FINISH====== */
@@ -446,10 +450,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.footer-social-media-content .social-media-link {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-media-content {
